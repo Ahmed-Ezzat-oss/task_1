@@ -1,0 +1,35 @@
+//numbers section styles start here
+@import "../general/general-rules.scss";
+
+.numbers{
+    position: relative;
+    background-image: url(pages/background2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    .numbers-items{
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 14px;
+        width: 100%;
+        .number-item{
+            padding: 120px 0;
+            text-align: center;
+            text-transform: capitalize;
+            .icon{
+                color: $main-color;
+            }
+            .number-item-title{
+                color:white;
+                font-weight: bold;
+                font-size: 25px;
+                margin-top: 20px;
+                margin-bottom: 0px;
+            }
+            .number-item-text{
+                color: #fff;
+            }
+        }
+    }
+}
+//numbers section styles end here

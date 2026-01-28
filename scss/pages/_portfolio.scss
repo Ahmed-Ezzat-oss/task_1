@@ -1,0 +1,109 @@
+// portfolio section styles start here
+@import "../general/general-rules.scss";
+
+.portfolio {
+    background: #f9f9f9;
+    @extend .flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .portfolio-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .portfolio-item {
+            width: 30%;
+            margin-bottom: 50px;
+            position: relative;
+            padding: 20px;
+
+            img {
+                width: 100%;
+            }
+
+            .layer-content {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                opacity: 0;
+                transition: opacity 0.2s;
+
+                .layer-info {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+
+                    a {
+                        background-color: $main-color;
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        margin: 5px;
+                        position: relative;
+                        top: 10px;
+                        transition: top .3s;
+
+                        i {
+                            line-height: 40px;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .category {
+                    color: $main-color;
+                    display: block;
+                    margin-bottom: 5px;
+                    text-transform: uppercase;
+                    position: relative;
+                    top: 10px;
+                    transition: top .1s;
+                }
+
+                .layer-content-title {
+                    font-size: 20px;
+                    color: #fff;
+                    margin-bottom: 10px;
+                    position: relative;
+                    top: 10px;
+                    transition: top .2s;
+                }
+            }
+
+            &:hover {
+                .layer-content {
+                    opacity: 1;
+                }
+            }
+
+            .portfolio-item.mg {
+                margin: 0 5%;
+            }
+
+            &:hover {
+                .layer-info {
+
+                    .category,
+                    a {
+                        top: 0px;
+                    }
+                }
+
+                .layer-content-title {
+                    top: 0px;
+                }
+            }
+        }
+    }
+
+}
+
+// portfolio section styles end here

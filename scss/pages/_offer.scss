@@ -1,0 +1,48 @@
+// offer section styles start here
+@import "../general/general-rules.scss";
+
+.offer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .offer-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        width: 100%;
+    
+
+    .offer-item {
+        width: 100%;
+        padding: 20px 15px 20px 70px;
+        border: 1px solid #e8e8e8;
+        position: relative;
+
+        .icon {
+            position: relative;
+            right: 50px;
+            top: 33px;
+            color: $main-color;
+        }
+    
+        .offer-item-desc {
+            line-height: 1.6;
+            color: #868f9b;
+            text-transform: capitalize;
+        }
+
+        .offer-item-title {
+            transition: color .5s;
+            text-transform: capitalize;
+        }
+
+        &:hover {
+            .offer-item-title {
+                color: #fff;
+            }
+        }
+    }
+}
+}
+//offer section styles end here

@@ -1,0 +1,270 @@
+@media (max-width: 430px){
+    .header{
+        .nav{
+            display: none !important;
+        }
+    }
+}
+@media (min-width:430px) and (max-width:850px){
+    .header{
+        .nav{
+            display: none !important;
+        }
+    }
+}
+@media (max-width: 430px){
+
+        .home-content{
+            width: 90%;
+            margin-top: 40px;
+            .btn{
+                width: 100%;
+                margin-bottom: 5px;
+                margin-right: 0px;
+                justify-items: center;
+            }
+            .title{
+            font-size: 14px;
+        }
+        .home-desc{
+            font-size: 14px;
+        }
+        }
+
+    }
+    @media (min-width:430px) and (max-width:850px){
+        .header{
+            .nav{
+                display: none;
+            }
+        }
+        .home-content{
+            width: 90%;
+            .title{
+                font-size: 50px;
+            }
+            .home-desc{
+                font-size: 16px;
+            }
+            .btn{
+                width: 100%;
+                margin-bottom: 5px;
+                margin-right: 0px;
+                justify-items:center;
+            }
+        }
+    }
+@media(max-width:430px){
+        .about{
+            flex-direction: column;
+            .about-content{
+                flex-direction: column;
+                align-items: center;
+                .about-item{
+                    width: 80%;
+                    margin-bottom: 20px;
+                }
+                .about-item.mg{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    @media(min-width:430px) and (max-width:850px){
+        .about{
+            flex-direction: column;
+            .about-content{
+                flex-direction: column;
+                align-items: center;
+                .about-item{
+                    width: 70%;
+                    margin-bottom: 20px;
+                }
+                .about-item.mg{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    @media (max-width: 430px) {
+        .portfolio{
+            flex-direction: column;
+            .portfolio-content{
+                align-items: center;
+                flex-direction: column;
+                .portfolio-item{
+                    width: 80%;
+                    margin-bottom: 20px;
+                }
+                .portfolio-item.mg{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    @media(min-width:430px) and (max-width:850px){
+        .portfolio{
+            flex-direction: column;
+            .portfolio-content{
+                align-items: center;
+                flex-direction: column;
+                .portfolio-item{
+                    width: 70%;
+                    margin-bottom: 20px;
+                }
+                .portfolio-item.mg{
+                    margin: 0;
+                }
+            }
+        }
+    }
+@media(max-width:430px){
+    .offer-content{
+        grid-template-columns: repeat(1,1fr) !important;
+    }
+}
+@media(min-width:430px) and (max-width:850px){
+    .offer-content{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+}
+@media(max-width:430px){
+    .service-content{
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+    .service img{
+        width: 100%;
+    }
+}
+@media(min-width:430px) and (max-width:850px){
+    .service-content{
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+    .service img{
+        width: 100%;
+    }
+}
+    @media(max-width:430px){
+        .number-item{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    @media(min-width:430px) and (max-width:850px){
+        .number-item{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+    @media (max-width:430px){
+        .price-content{
+            flex-direction: column;
+            align-items: center;
+            .price-plan{
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+        }
+    }
+    @media(min-width:430px) and (max-width:850px){
+        .price-content{
+            flex-direction: column;
+            align-items: center;
+            .price-plan{
+                width: 70%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @media(max-width:430px){
+        .testimonail-item{
+            width: 100%;
+            margin-bottom: 20px;
+            .testimonail-toplayer{
+                padding-left: 70px;
+            }
+            .testimonail-desc{
+                font-size: 14px;
+            }
+        }
+    }
+    @media(min-width:430px) and (max-width:850px){
+        .testimonail-item{
+            width: 100%;
+            margin-bottom: 20px;
+            .testimonail-toplayer{
+                padding-left: 70px;
+            }
+            .testimonail-desc{
+                font-size: 16px;
+            }
+        }
+    }
+    @media (max-width:430px ){
+        .team-content{
+            flex-direction:column ;
+            align-items: center;
+            .team-item{
+                width: 80%;
+                margin-bottom: 20px;
+            }
+            .team-item.mg{
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+
+    }
+    @media(min-width:430px) and (max-width:850px){
+        .team-content{
+            flex-direction: column;
+            align-items: center;
+            .team-item{
+                width: 70%;
+                margin-bottom: 20px;
+            }
+            .team-item.mg{
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+        
+    }
+    @media(max-width:430px){
+        .blog-item{
+            width: 100% !important;
+            margin-bottom: 20px;
+        }
+    }
+    @media(max-width:430px){
+    .contact-item{
+        width: 100% ;
+        margin-bottom: 20px;
+    }
+    .contact-form .input1,
+    .contact-form .input2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contact-form .input2{
+        margin-left: 0px;
+    }
+}
+@media(min-width:430px) and (max-width:850px){
+    .contact-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-form .input1,
+    .contact-form .input2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contact-form .input2{
+        margin-left: 0px;
+    }
+}

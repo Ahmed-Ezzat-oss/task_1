@@ -1,0 +1,81 @@
+//team section styles start here
+@import "../general/general-rules.scss";
+
+.team-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap:wrap;
+    .team-item{
+        background-color: #e8e8e8;
+        width: 30%;
+        text-align: center;
+        padding: 15px 10px;
+        .team-item-img{
+            width: 90%;
+            margin: auto;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .team-img-overlay{
+                position: absolute;
+                background-color: rgba(0,0,0,.5);
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                opacity: 0;
+                visibility: hidden;
+                transition: .5s opacity , .5s visibility;
+                a{
+                    display: block;
+                    width: 40px;
+                    height:40px;
+                    text-align: center;
+                    background-color: $main-color;
+                    color: #fff;
+                    margin-left: auto;
+                    &:hover{
+                        background-color: #23527c;
+                        opacity: 0.8;
+                    }
+                }
+                i{
+                    line-height: 40px;
+                }
+            }
+        }
+        .team-item-titlle{
+            text-transform: uppercase;
+            transition: color .5s;
+            margin-top: 20px;
+        }
+        .team-item-text{
+            color: #999;
+            text-transform: uppercase;
+            transition: color .5s;
+        }
+        &:hover{
+            .team-img-overlay{
+                opacity: 1;
+                visibility: visible;
+            }
+            .team-item-titlle{
+                color: #fff;
+            }
+            .team-item-text{
+                color: $main-color;
+            }
+        }
+        
+
+    }
+    .team-item.tb-effect{
+        z-index: 1;
+    }
+    .team-item.mg{
+        margin: 0 5%;
+    }
+}
+//team section styles end here

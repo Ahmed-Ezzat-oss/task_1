@@ -1,0 +1,43 @@
+//contact section styles start here
+@import "../general/general-rules.scss";
+
+.contact-item{
+    width: 33.33%;
+    float: left;
+    margin: 15px 0;
+    text-align: center;
+    i{
+        font-size: 36px;
+        color: $main-color;
+        margin-bottom: 10px;
+    }
+    p{
+        color: #999;
+    }
+
+}
+    .contact-form{
+        text-align: center;
+        margin-top: 40px;
+        .input1,
+        .input2{
+            width: calc(50% - 10px);
+            float: left;
+        }
+        .input2{
+            margin-left: 15px;
+        }
+        .input{
+            margin-bottom:20px ;
+        }
+    }
+    .main-btn{
+        background: $main-color;
+        color: #fff;
+        display: inline-block;
+        padding: 10px 35px;
+        margin: 3px;
+        border: 10px solid transparent;
+        border: radius 2px; 
+    }
+    
